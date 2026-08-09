@@ -52,13 +52,16 @@
 }
 
 *{ margin:0; padding:0; box-sizing:border-box; }
-html{ scroll-behavior:smooth; }
+html{ scroll-behavior:smooth; overflow-x:hidden; width:100%; overscroll-behavior-y:none; }
 body{
   font-family: var(--font-body);
   background: linear-gradient(180deg, #E4E9DC 0%, #F3F0E7 40%, var(--cream) 100%);
   color: var(--ink);
   min-height:100vh;
+  min-height:100dvh;
+  width:100%;
   overflow-x:hidden;
+  overscroll-behavior-y:none;
   -webkit-font-smoothing:antialiased;
 }
 
@@ -571,7 +574,7 @@ body{
 <!-- Botón de música -->
 <button id="music-toggle" aria-label="Reproducir música">🎵</button>
 <audio id="bg-music" loop preload="none">
-  <source src="https://cdn.jsdelivr.net/gh/gioprofesionalweb/Musica_Invitaciones@main/Edsheraan.mp3">
+  <source src="https://cdn.jsdelivr.net/gh/gioprofesionalweb/Musica_Invitaciones@main/Edsheraan.mp3" type="audio/mpeg">
 </audio>
 
 <script>
